@@ -1,5 +1,5 @@
 # venturit_api
- Venturit backend test - Movies REST API.}
+ Venturit backend test - Movies REST API.
 
 
 # Run REST API.
