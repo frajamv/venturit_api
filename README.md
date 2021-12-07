@@ -5,9 +5,10 @@
 # Run REST API.
 1. Insert .env file.
 2. Open integrated terminal.
-3. Execute "go run main.go" in integrated terminal.
-4. Import Postman collection.
-5. Run endpoints.
+3. Execute "go get ." in integrated terminal to fetch and update all packages and dependencies.
+4. Execute "go run main.go" in integrated terminal to execute de application.
+5. Import Postman collection.
+6. Run endpoints.
 
 
 # Database
