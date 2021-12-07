@@ -1,5 +1,6 @@
 package models
 
+// Movie object from DB.
 type Movie struct {
 	Id            int64    `json:"id"`
 	Title         string   `json:"title"`

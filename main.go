@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	con, err := db.GetDBconnection()
+	con, err := db.GetDBconnection() // Connect to DB to test it's connectivity.
 
 	if err != nil {
 		log.Println("error with database " + err.Error())
@@ -24,7 +24,7 @@ func main() {
 	}
 
 	router := mux.NewRouter()
-	routes.SetupRoutes(router)
+	routes.SetupRoutes(router) // Setup all routes to be fetched by the REST client.
 
 	port := ":5500"
 
@@ -34,7 +34,5 @@ func main() {
 		WriteTimeout: 15 * time.Second,
 		ReadTimeout:  15 * time.Second,
 	}
-
-	log.Printf("Server started at %s", port)
 	log.Fatal(server.ListenAndServe())
 }

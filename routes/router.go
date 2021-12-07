@@ -8,6 +8,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
+// Determine the routes to be accessed through REST.
 func SetupRoutes(router *mux.Router) {
 
 	router.HandleFunc("/", func(res http.ResponseWriter, req *http.Request) {
